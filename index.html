@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Виведення Даних</title>
+</head>
+<body>
+    <h1>Методи виведення в JavaScript</h1>
+    <p id="output"></p>
+    <button onclick="showAlert()">Натисни для alert</button>
+    <button onclick="writeToPage()">Натисни для document.write()</button>
+    <button onclick="logToConsole()">Натисни для console.log()</button>
+    <button onclick="updateInnerHTML()">Натисни для innerHTML</button>
+    
+    <script>
+        function showAlert() {
+            window.alert("Вас вітає JavaScript! Це повідомлення через alert.");
+        }
+        
+        function writeToPage() {
+            document.write("<h2>Цей текст виведено через document.write()</h2>");
+        }
+        
+        function logToConsole() {
+            console.log("Це повідомлення з'явилось у консолі браузера через console.log()");
+        }
+        
+        function updateInnerHTML() {
+            document.getElementById("output").innerHTML = "<strong>Цей текст додано через innerHTML</strong>";
+        }
+    </script>
+</body>
+</html>
